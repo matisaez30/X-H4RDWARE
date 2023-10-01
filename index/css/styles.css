@@ -228,7 +228,7 @@ main{
 #productos .productos-container .cards{
     width: 30%;
     height: 30%;
-    box-shadow: -21px 25px 17px 6px rgba(0,0,0,0.28);
+
     overflow: hidden;
     border: 2px solid black;
     border-radius: 45px;
@@ -236,6 +236,11 @@ main{
     justify-content: center;
     align-items: center;
     display: flex;
+    transition: 0.6s ease;
+}
+#productos .productos-container .cards:hover{
+    transition: 0.6s ease;
+    box-shadow: -21px 25px 17px 6px rgba(0,0,0,0.28);
 }
 
 #productos .productos-container .cards img{
@@ -266,7 +271,13 @@ footer .footer-container{
     font-size: 20px;
     margin-top: 50px;
     color:#fff;
+    transition: 1s ease;
 }
+.footer-container .footer-container-title p:hover{
+    transition: 1s ease;
+    color: var(--color-navbar);
+}
+
 .footer-container-social ul{
     display:flex;
     justify-content: space-between;
@@ -275,17 +286,13 @@ footer .footer-container{
     margin-top: 50px;
     gap: 25px;
 }
-
-/* @keyframes slide{
-    0%{margin-left: 0;}
-    20%{margin-left: 0;}
-
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
-
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
-
-    75%{margin-left: -300%;}
-    100%{margin-left: -300%;}
-} */
+.footer-container-social a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 50px;
+    transition: 0.5s ease;
+}
+.footer-container-social a:hover{
+    transition: 0.5s ease;
+    color: var(--color-navbar);
+}
