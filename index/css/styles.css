@@ -105,6 +105,7 @@ nav ul li a:hover::after{
 }
 .slide img{
     width: 100%;
+    filter: grayscale(1);
 }
 main{
     margin-top: 150px;
