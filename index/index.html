@@ -23,12 +23,13 @@
             <nav class="nav-container">
                 <ul>
                     <li><a href='#main'>Inicio</a></li>
-                    <li><a href=''>Nosotros</a></li>
+                    <li><a href='../nosotros/nosotros.html'>Nosotros</a></li>
                     <li><a href=''>Ayuda</a></li>
                     <li><a href=''>Marcas Sponsor</a></li>
                     <li><a href=''>Productos</a></li>
                     <li><a href=''>PC Armadas</a></li>
                 </ul>
+                <button class="btnLoguin-popup">Login</button>
             </nav>
         </div>
         <div id="carrousel-marcas" class="slider">
@@ -90,6 +91,72 @@
             </div>
         </div>
     </header>
+    <div class="wrapper">
+        <span class="icon-close">
+            <i class="fa-solid fa-xmark" style="color: #fff;"></i>
+        </span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="">
+                <div class="input-box">
+                    <span class="icon">
+                        <i class="fa-solid fa-envelope" style="color: #38B6FF;"></i>
+                    </span>
+                    <input type="email" name=""required id="email">
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <i class="fa-solid fa-lock" style="color: #38B6FF;"></i>
+                    </span>
+                    <input type="password" name=""required id="password">
+                    <label for="password">Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label for="remember"><input type="checkbox" name="" id="remember">Recuérdame</label>
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                </div>
+                    <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>¿No tienes una cuenta?<a href="#" class="register-link">Regístrate</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="form-box register">
+            <h2>Registro</h2>
+            <form action="">
+                <div class="input-box">
+                    <span class="icon">
+                        <i class="fa-solid fa-user-secret" style="color: #38B6FF;"></i>
+                    </span>
+                    <input type="text" name="name"required id="name">
+                    <label for="name">Usuario</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <i class="fa-solid fa-envelope" style="color: #38B6FF;"></i>
+                    </span>
+                    <input type="email" name=""required id="email-register">
+                    <label for="email-register">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <i class="fa-solid fa-lock" style="color: #38B6FF;"></i>
+                    </span>
+                    <input type="password" name=""required id="password-register">
+                    <label for="password-register">Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label for="terms-conditions">
+                        <input type="checkbox" name="" id="terms-conditions">Acepto los terminos & condiciones</label>
+                </div>
+                <div class="login-register">
+                    <p>Ya tienes una cuenta?<a href="#" class="login-link">Login</a></p>
+                </div>
+                    <button type="submit" class="btn">Regístrate</button>
+            </form>
+        </div>
+    </div>
     <main id='main'>
         <section id="inicio" class="inicio-container">
             <div class="inicio-container-text">
@@ -146,5 +213,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>
