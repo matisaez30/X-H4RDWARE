@@ -500,8 +500,7 @@ footer .footer-container{
     transition: 1s ease;
     color: var(--color-navbar);
 }
-
-.footer-container-social ul{
+.footer-container ul{
     display:flex;
     justify-content: space-between;
     align-items: center;
