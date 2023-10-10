@@ -333,33 +333,40 @@ nav ul li a:hover::after{
 /*                          Fin de Login                       */
 
 
-/* menu del acordeon */
+/* menu FAQ acordeon */
 
-.menu-acordeon {
-    width: 500px;
-    box-shadow: 7px 13px 37px rgb(243, 239, 239);
-}
-section p {
-overflow: hidden;
-max-height: 0;
-text-align: justify;
-background-color: #000d14;
-transition: all .2s ease-in-out; 
-color: #fff;
+.faq-container{
 
+display: flex;    
+flex-direction: column;
+justify-content: center;
+align-items: center;
+max-width: 80%;
+margin: auto;
 }
-section a {
-text-decoration: none;
-display: block;
-text-align: left;
-padding: 10px;
-border-bottom: 2px solid white;
+.pregunta{
+    
+    margin: 10px;
+    max-width: 500px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    padding: 1rem;
 }
-section:target p {
-max-height: 120px;
-padding: 10px;
-color: #fff;
+.pregunta-encabezado h3{
+    
+    margin: 0;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
+.respuesta {
+    height: 0;
+    opacity: 0;
+}
+.respuesta.activo{
+    height: auto;
+    opacity: 1;
+}
+
 
 
 /* fin estilos acordeon */
@@ -374,12 +381,12 @@ main{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 50vh;
+    height: 100%;
     width: 100%;
     color: var(--color-texto);
     position: static;
     top: 0;
-    z-index: -1;
+    *z-index: -1;
 }
 
 main .ayuda{
@@ -389,6 +396,7 @@ text-align: center;
 size: 30px;
 padding-top: 1px;
 font-family: 'Prompt', sans-serif;
+font-size:x-large;
 color:#ffffff;    
 }
 a:link, a:visited, a:active {
@@ -534,7 +542,7 @@ footer .footer-container{
     width: 100%;
     height: 100%;
     display:flex;
-    align-items: center;
+    align-items:center;
     flex-direction: column;
     box-shadow: 0px -12px 17px 6px rgba(0,0,0,0.28);
 }
