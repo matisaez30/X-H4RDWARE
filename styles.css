@@ -11,7 +11,6 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 header {
     background-color: var(--color-navbar);
@@ -32,6 +31,9 @@ header .encabezado{
     height: 90px;
 
 }
+header .hamburguesa{
+    display: none;
+}
 header .logo{
     display: flex;
     width: 50%;
@@ -39,14 +41,15 @@ header .logo{
     margin-left: 20px;
 }
 header .logo img{
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
 }
 header nav{
     display: flex;
-    width: 50%;
+    width: 45%;
     justify-content: space-evenly;
-    align-items: center;
+    
+    
 
 }
 nav ul{
@@ -332,45 +335,6 @@ nav ul li a:hover::after{
 
 /*                          Fin de Login                       */
 
-
-/* menu FAQ acordeon */
-
-.faq-container{
-
-display: flex;    
-flex-direction: column;
-justify-content: center;
-align-items: center;
-max-width: 80%;
-margin: auto;
-}
-.pregunta{
-    
-    margin: 10px;
-    max-width: 500px;
-    border: 1px solid whitesmoke;
-    border-radius: 10px;
-    padding: 1rem;
-}
-.pregunta-encabezado h3{
-    
-    margin: 0;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-.respuesta {
-    height: 0;
-    opacity: 0;
-}
-.respuesta.activo{
-    height: auto;
-    opacity: 1;
-}
-
-
-
-/* fin estilos acordeon */
-
 main{
     margin-top: 150px;
     background: linear-gradient(
@@ -381,30 +345,13 @@ main{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     color: var(--color-texto);
     position: static;
     top: 0;
-    *z-index: -1;
+    z-index: -1;
 }
-
-main .ayuda{
-display: block;   
-text-decoration: none; 
-text-align: center;
-size: 30px;
-padding-top: 1px;
-font-family: 'Prompt', sans-serif;
-font-size:x-large;
-color:#ffffff;    
-}
-a:link, a:visited, a:active {
-    text-decoration:none;
-    color: #ffffff;
-    size: 30px;
-}
-
 #inicio{
     display: flex;
     justify-content: space-evenly;
@@ -542,7 +489,7 @@ footer .footer-container{
     width: 100%;
     height: 100%;
     display:flex;
-    align-items:center;
+    align-items: center;
     flex-direction: column;
     box-shadow: 0px -12px 17px 6px rgba(0,0,0,0.28);
 }
@@ -576,89 +523,436 @@ footer .footer-container{
     color: var(--color-navbar);
 }
 
-
-/* MEDIA QUERIES RESPONSIVE */
-
-
-
-        @media (max-width: 400px) {
-
-            .nav-container{
-            
-            width: 100%;
-            height: 170px;
-            display:flex;
-            flex-direction: row;
-            margin: 1px;
-            }
-
-            main{
-                margin-top: 1px;
-                background: linear-gradient(
-                    rgba(0,0,0,0.6),
-                    rgba(0,0,0,0.1)
-                ),
-                url('../assets/fondo-img/habitacion.gamer.webp');
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                height: 160vh;
-                width: 115%;
-                color: var(--color-texto);
-                position:relative;
-                top: 100px;
-                z-index: -1;
-            }
-            .inicio-container-text{
-             width: 80%;
-             justify-content: left;
-            }
-            header .logo{
-                display: flex;
-                width: 30%;
-                align-items: center;
-                margin-left: 20px;
-            }
-            header .logo img{
-                width: 50px;
-                height: 50px;
-            }
-
-            header nav{
-                display: block;
-                flex-direction: column;
-                width: 100%;
-               
-                align-items: center;
-                margin-right: 1px;
-            }
-
-            #descuentos{
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                height: 50%;
-                width: 100%;
-            }
-
-            
-
-            footer .footer-container{
-                width: 100%;
-                height: 100%;
-                top: 500px;
-                
-                position:relative;
-                align-items:center;
-                flex-direction: column;
-                box-shadow: 0px -12px 17px 6px rgba(0,0,0,0.28);
-                
-               
-            }
-             
-            
-            
-            
+@media only screen and (max-width:320px){
+    .encabezado{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
-             
-    /* FIN DE MEDIA QUERIES */
+    header .hamburguesa{
+        display: block;
+        font-size: 1.5em;
+        color: #fff;
+        background-color: var(--color-navbar);
+        border: none;
+        outline: none;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .nav-container{
+        display: none;
+    }
+    .nav-container.active{
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--color-navbar);
+        z-index: 99;
+    }
+    .nav-container.active ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        right: 10%;
+        gap: 25px;
+    }
+    .nav-container.active ul .btn-close{
+        position: absolute;
+        top: 0;
+        right: 15%;
+        background-color: var(--color-navbar);
+        border: none;
+        outline: none;
+        font-size: 1.5em;
+    }
+    .nav-container.active .btnLoguin-popup{
+        position: relative;
+        top: 20%;
+        right: 10%;
+        background-color: var(--color-navbar);
+        outline: none;
+        font-size: 1.5em;
+    }
+    main{
+        width: 100vw;
+        height: 100vh;
+    }
+    main .inicio-container{
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;    
+        height: 100%;
+
+       }
+    main .inicio-container-text h1{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 0;
+        right: 15%;
+    }
+    
+    main .fondo-container{
+        display: none;
+    }
+    #descuentos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }   
+    #descuentos img{
+        width: 100%;
+        height: 100%;
+    }
+    #descuentos .descuentos-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+        width: 100%;
+        height: 100%;
+        margin-left: 5%;   
+    }  
+    #productos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    } 
+    #productos h2{
+        width: 100%;
+        height: 100%;
+        margin-left: 20%;
+    }
+    #productos .productos-container .cards{
+        width: 50%;
+        height: 30%;
+        margin-bottom: 20px;
+    }
+    #productos .productos-container .cards img{
+        width: 100%;
+        height: 100%;
+    }
+    footer{
+        width: 100%;
+        height: 100%;
+    }
+    footer .footer-container{
+        width: 100%;
+        height: 100%;
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0px -12px 17px 6px rgba(0,0,0,0.28);
+    }
+    footer .footer-container .footer-container-title p{
+        width: 100%;
+        height: 100%;
+        margin-left: 10%;
+    }   
+
+}
+
+@media only screen and (max-width:375px){
+    .encabezado{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header .hamburguesa{
+        display: block;
+        font-size: 1.5em;
+        color: #fff;
+        background-color: var(--color-navbar);
+        border: none;
+        outline: none;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .nav-container{
+        display: none;
+    }
+    .nav-container.active{
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--color-navbar);
+        z-index: 99;
+    }
+    .nav-container.active ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        right: 10%;
+        gap: 25px;
+    }
+    .nav-container.active ul .btn-close{
+        position: absolute;
+        top: 0;
+        right: 15%;
+        background-color: var(--color-navbar);
+        border: none;
+        outline: none;
+        font-size: 1.5em;
+    }
+    .nav-container.active .btnLoguin-popup{
+        position: relative;
+        top: 20%;
+        right: 10%;
+        background-color: var(--color-navbar);
+        outline: none;
+        font-size: 1.5em;
+    }
+    main{
+        width: 100vw;
+        height: 100vh;
+    }
+    main .inicio-container{
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;    
+        height: 100%;
+
+       }
+    main .inicio-container-text h1{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 0;
+        right: 15%;
+    }
+    
+    main .fondo-container{
+        display: none;
+    }
+    #descuentos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }   
+    #descuentos img{
+        width: 100%;
+        height: 100%;
+    }
+    #descuentos .descuentos-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+        width: 100%;
+        height: 100%;
+        margin-left: 5%;   
+    }  
+    #productos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    } 
+    #productos h2{
+        width: 100%;
+        height: 100%;
+        margin-left: 20%;
+    }
+    #productos .productos-container .cards{
+        width: 50%;
+        height: 30%;
+        margin-bottom: 20px;
+    }
+    #productos .productos-container .cards img{
+        width: 100%;
+        height: 100%;
+    }
+    footer{
+        width: 100%;
+        height: 100%;
+    }
+    footer .footer-container{
+        width: 100%;
+        height: 100%;
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0px -12px 17px 6px rgba(0,0,0,0.28);
+    }
+    footer .footer-container .footer-container-title p{
+        width: 100%;
+        height: 100%;
+        margin-left: 10%;
+    }   
+
+}
+
+@media only screen and (max-width:425px){
+    .encabezado{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header .hamburguesa{
+        display: block;
+        font-size: 1.5em;
+        color: #fff;
+        background-color: var(--color-navbar);
+        border: none;
+        outline: none;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .nav-container{
+        display: none;
+    }
+    .nav-container.active{
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--color-navbar);
+        z-index: 99;
+    }
+    .nav-container.active ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        right: 10%;
+        gap: 25px;
+    }
+    .nav-container.active ul .btn-close{
+        position: absolute;
+        top: 0;
+        right: 15%;
+        background-color: var(--color-navbar);
+        border: none;
+        outline: none;
+        font-size: 1.5em;
+    }
+    .nav-container.active .btnLoguin-popup{
+        position: relative;
+        top: 20%;
+        right: 10%;
+        background-color: var(--color-navbar);
+        outline: none;
+        font-size: 1.5em;
+    }
+    main{
+        width: 100vw;
+        height: 100vh;
+    }
+    main .inicio-container{
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;    
+        height: 100%;
+
+       }
+    main .inicio-container-text h1{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 0;
+        right: 15%;
+    }
+    
+    main .fondo-container{
+        display: none;
+    }
+    #descuentos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }   
+    #descuentos img{
+        width: 100%;
+        height: 100%;
+    }
+    #descuentos .descuentos-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+        width: 100%;
+        height: 100%;
+        margin-left: 5%;   
+    }  
+    #productos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    } 
+    #productos h2{
+        width: 100%;
+        height: 100%;
+        margin-left: 20%;
+    }
+    #productos .productos-container .cards{
+        width: 50%;
+        height: 30%;
+        margin-bottom: 20px;
+    }
+    #productos .productos-container .cards img{
+        width: 100%;
+        height: 100%;
+    }
+    footer{
+        width: 100%;
+        height: 100%;
+    }
+    footer .footer-container{
+        width: 100%;
+        height: 100%;
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0px -12px 17px 6px rgba(0,0,0,0.28);
+    }
+    footer .footer-container .footer-container-title p{
+        width: 100%;
+        height: 100%;
+        margin-left: 10%;
+    }  
+}
