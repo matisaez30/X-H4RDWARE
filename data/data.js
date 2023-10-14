@@ -1291,7 +1291,7 @@
  },
  {
   "product_name": "Gabinete Antec Torque Black/White ARGB Vidrio Templado",
-  "image": "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_35554_Gabinete_Antec_Torque_Black_White_ARGB_Vidrio_Templado_759da859-grn.jpg,
+  "image": "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_35554_Gabinete_Antec_Torque_Black_White_ARGB_Vidrio_Templado_759da859-grn.jpg",
   "price": 469000,
   "stock": false,
   "discount": 3500,
@@ -1380,7 +1380,7 @@
   "id": "138"
  },
  {
-  "product_name": "Monitor Gamer Samsung 24" G50 Curvo 144Hz Full HD VA FreeSync",
+  "product_name": "Monitor Gamer Samsung 24 G50 Curvo 144Hz Full HD VA FreeSync",
   "image": "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_37305_Monitor_Gamer_Samsung_24__G50_Curvo_144Hz_Full_HD_VA_FreeSync_2fa95cdc-grn.jpg",
   "price": 129999,
   "stock": false,
@@ -1390,7 +1390,7 @@
   "id": "139"
  },
  {
-  "product_name": "Monitor LG 24" 24MK600M IPS Full HD Bordes Ultra Finos",
+  "product_name": "Monitor LG 24 24MK600M IPS Full HD Bordes Ultra Finos",
   "image": "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_16040_Monitor_LG_24__24MK600M_IPS_Full_HD_Bordes_Ultra_Finos_a7b8df97-grn.jpg",
   "price": 127400,
   "stock": false,
@@ -1400,7 +1400,7 @@
   "id": "140"
  },
  {
-  "product_name": "Monitor LG 34" UltraWide 34WL85C-B Curvo IPS 2K QHD 21:9",
+  "product_name": "Monitor LG 34 UltraWide 34WL85C-B Curvo IPS 2K QHD 21:9",
   "image": "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_27446_Monitor_LG_34__UltraWide_34WL85C-B_Curvo_IPS_2K_QHD_21_9_868148e1-grn.jpg",
   "price": 699550,
   "stock": false,
@@ -1410,7 +1410,7 @@
   "id": "141"
  },
  {
-  "product_name": "Monitor Samsung 27" S70A 4K UHD IPS",
+  "product_name": "Monitor Samsung 27 S70A 4K UHD IPS",
   "image": "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_31990_Monitor_Samsung_27__S70A_4K_UHD_IPS_8a093613-grn.jpg",
   "price": 319700,
   "stock": false,
@@ -1420,7 +1420,7 @@
   "id": "142"
  },
  {
-  "product_name": "Monitor Gamer Samsung 27" G3 Odyssey Full HD 144Hz",
+  "product_name": "Monitor Gamer Samsung 27 G3 Odyssey Full HD 144Hz",
   "image": "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_34633_Monitor_Gamer_Samsung_27__G3_Odyssey_Full_HD_144Hz_4aa54d48-grn.jpg",
   "price": 198000,
   "stock": false,
@@ -1430,7 +1430,7 @@
   "id": "143"
  },
  {
-  "product_name": "Monitor Gamer Samsung 27" G5 Odyssey Curvo 165Hz 2K QHD VA FreeSync",
+  "product_name": "Monitor Gamer Samsung 27 G5 Odyssey Curvo 165Hz 2K QHD VA FreeSync",
   "image": "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_37078_Monitor_Gamer_Samsung_27__G5_Odyssey_Curvo_165Hz_2K_QHD_VA_FreeSync_e527a7f9-grn.jpg",
   "price": 263500,
   "stock": false,

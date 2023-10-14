@@ -11,6 +11,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Prompt', Courier, monospace !important;
 }
 header {
     background-color: var(--color-navbar);
@@ -50,6 +51,9 @@ header nav{
     justify-content: space-evenly;
     align-items: center;
 
+}
+nav .btn-close{
+    display: none;
 }
 nav ul{
     display: flex;
@@ -140,7 +144,7 @@ nav ul li a:hover::after{
     top: 20%;
     width: 400px;
     height: 440px;
-    background-color: transparent;
+    background-color: var(--color-navbar);
     border: 2px solid #38B6FF;
     border-radius: 20px;
     backdrop-filter: blur(20px);
@@ -181,6 +185,7 @@ nav ul li a:hover::after{
     position: absolute;
     transition: none;
     transform: translateX(400px);
+    
 }
 
 .wrapper.active .form-box.register {
@@ -213,7 +218,8 @@ nav ul li a:hover::after{
 }
 .input-box {
     position: relative;
-    width: 100%;
+    left: 10%;
+    width: 80%;
     height: 50px;
     border-bottom: 2px solid #fff;
     margin: 30px 0;
@@ -269,10 +275,15 @@ nav ul li a:hover::after{
     font-family: 'Prompt', sans-serif;
 
 }
+.remember-forgot label{
+    position: relative;
+    left: 10%;
+}
 
 .remember-forgot label input{
     accent-color: #162938;
     margin-right: 3px;
+    position: relative;
 }
 
 
@@ -288,7 +299,7 @@ nav ul li a:hover::after{
 }
 
 .btn{
-    width: 100%;
+    width: 80%;
     height: 45px;
     background-color: #3e444181;
     border: none;
@@ -298,7 +309,8 @@ nav ul li a:hover::after{
     font-family: 'Prompt', sans-serif;
     font-weight: 600;
     color: #fff;
-
+    position: relative;
+    left: 10%;  
     cursor: pointer;
     transition: .5s;
 }
@@ -370,9 +382,7 @@ main{
     margin-top: 50px;
 }
 #inicio .inicio-container-text p{
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 600;
-    letter-spacing: 2px;
+    font-weight: 400;
     font-size: 20px;
     margin-top: 20px;
     margin-left: 20%;
@@ -414,9 +424,7 @@ main{
     margin-top: 50px;
 }
 #descuentos p{
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 600;
-    letter-spacing: 2px;
+    font-weight: 400;
     font-size: 20px;
     margin-top: 20px;
     justify-content: justify;
@@ -524,6 +532,7 @@ footer .footer-container{
 
 @media only screen and (max-width:320px){
     .encabezado{
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -676,7 +685,7 @@ footer .footer-container{
     header .hamburguesa{
         display: block;
         font-size: 1.5em;
-        color: #fff;
+        color: #38B6FF;
         background-color: var(--color-navbar);
         border: none;
         outline: none;
@@ -728,6 +737,10 @@ footer .footer-container{
     main{
         width: 100vw;
         height: 100vh;
+        background-image: url('../assets/fondo-img/set-up.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     main .inicio-container{
         display: flex; 
