@@ -3,21 +3,25 @@ const { createApp } = Vue;
 createApp({
     data(){
         return {
-            message: 'Hello Vue.js!',
-            code: '1334',
+            error: false,
+            datos: [],
+            url: '../../data/data.json'
         
         }
     },
     methods: {
         fetchData(url){
-            fetch(this.url)
+            fetch(url)
             .then(res => res.json()
-            .then(data => console.log(data))
+            .then(data => {
+                this.datos = data.products;
+            })
             .catch(err => console.log(err))
             );
 
         },
-        
-
+    },
+    created(){
+        this.fetchData(this.url);
     }
 }).mount('#app')

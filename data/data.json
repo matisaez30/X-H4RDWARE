@@ -1,7 +1,7 @@
 {
     "products":[
         {
-        "product_name": "Ryzen 3 3200G 4.00GHz Turbo",
+        "product_name": "Ryzen 3 3200G 4.00GHz",
         "image": "https://imgs.search.brave.com/0MJ3uI455Uq8UET83CoB9lCe9_NF12Os6ILJmA0bSn0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/c2hvcHB1Yi5pby9j/ZG4tY2dpL2ltYWdl/L3c9NjAwLGg9NjAw/LHE9ODAsZj1hdXRv/L29maWNpbmFkb3Ni/aXRzL21lZGlhL3Vw/bG9hZHMvcHJvZHV0/b3MvZm90by9pamR0/Y25ybS9maWxlLnBu/Zw",
         "price": 84900,
         "stock": false,
@@ -31,7 +31,7 @@
         "id": "3"
         },
         {
-        "product_name": "Ryzen 5 3600 4.2GHz Am4 3ra Gen",
+        "product_name": "Ryzen 5 3600 4.2GHz Am4",
         "image": "https://http2.mlstatic.com/D_NQ_NP_847865-MLA50462139755_062022-O.webp",
         "price": 158.389,
         "stock": false,
