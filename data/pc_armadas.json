@@ -1,0 +1,114 @@
+{
+    "pc_armadas" :[
+        {
+            "id": 1,
+            "name_pc": "Pc Gamer Ryzen 5 7600",
+            "GPU": "RTX 4070 12gb",
+            "RAM": "16gb Ram",
+            "img":"https://www.megatecnologia.com.ar/thumb/1694632341434_800x800.jpg",
+            "storage": "SSD 480gb",
+            "power_supply": "750w 80 plus gold",
+            "price": "1910000" 
+        },
+        {
+            "id": 2,
+            "name_pc": "Pc Gamer Intel 12100f",
+            "GPU": "Gtx 1650 ",
+            "RAM": "16gb Ram",
+            "img":"https://www.megatecnologia.com.ar/thumb/1694620183919_800x800.jpg",
+            "storage": "SSD 480gb",
+            "power_supply": "500w Bronze",
+            "price": "900000" 
+        },
+        {
+            "id": 3,
+            "name_pc": "Pc Gamer X Amd Ryzen 5 5600g",
+            "GPU": "Radeon Vega Graphics",
+            "RAM": "16gb Ram",
+            "img":"https://www.megatecnologia.com.ar/thumb/1697042374014_800x800.jpg",
+            "storage": "SSD 480gb",
+            "power_supply": "Fuente 550w Bronze",
+            "price": "570000" 
+        },
+        {
+            "id": 4,
+            "name_pc": "Pc Gamer Intel Core I5 12400f",
+            "GPU": "RTX 4070 12gb",
+            "RAM": "16gb Ram",
+            "img":"https://www.megatecnologia.com.ar/thumb/1688495344934_800x800.jpg",
+            "storage": "SSD 480gb",
+            "power_supply": "Fuente 750w 80 Plus Bronze",
+            "price": "770000" 
+        },
+        {
+            "id": 5,
+            "name_pc": "Pc Gamer X Amd Ryzen 7 5700g",
+            "GPU": "Radeon Vega Graphics",
+            "RAM": "16gb Ram",
+            "img":"https://www.megatecnologia.com.ar/thumb/1694632341434_800x800.jpg",
+            "storage": "SSD 480gb",
+            "power_supply": "Fuente 550w Bronze",
+            "price": "630000" 
+        },
+        {
+            "id": 6,
+            "name_pc": "Pc Eco Ryzen 5 4600g",
+            "GPU": "Gráficos Vega 7",
+            "RAM": "8gb Ram",
+            "img":"https://www.megatecnologia.com.ar/thumb/1667486198320_800x800.jpg",
+            "storage": "SSD 480gb",
+            "power_supply": "Gabinete En Kit + 500",
+            "price": "370000" 
+        },
+        {
+            "id": 7,
+            "name_pc": "Pc Gamer Intel Core I9 13900",
+            "GPU": "Rtx 4090 24gb",
+            "RAM": "64gb Ram",
+            "img":"https://www.megatecnologia.com.ar/thumb/1694633978779_800x800.jpg",
+            "storage": "1tb Nvme ",
+            "power_supply": "Fuente 1000w 80 Plus Gold",
+            "price": "4269000" 
+        },
+        {
+            "id": 8,
+            "name_pc": "Pc Gamer Intel Core I5 13400",
+            "GPU": "Rtx 3060 12gb",
+            "RAM": "16gb Ram",
+            "img":"https://www.megatecnologia.com.ar/thumb/1694632072641_800x800.jpg",
+            "storage": "500gb Nvme",
+            "power_supply": "uente 850w 80 Plus Gold",
+            "price": "1439000" 
+        },
+        {
+            "id": 9,
+            "name_pc": "Pc Office Intel Core I3 13100",
+            "GPU": "Intel UHD Graphics 630",
+            "RAM": "8gb Ram",
+            "img":"https://www.megatecnologia.com.ar/thumb/1682105591309_800x800.jpg",
+            "storage": "SSD 480gb",
+            "power_supply": "500w 80 plus bronze",
+            "price": "440000" 
+        },
+        {
+            "id": 10,
+            "name_pc": "Pc Gamer Amd Ryzen 5 7600",
+            "GPU": "Rtx 3060 12gb",
+            "RAM": "16gb Ram",
+            "img":"https://www.megatecnologia.com.ar/thumb/1694631005438_800x800.jpg",
+            "storage": "SSD 480gb",
+            "power_supply": "Fuente 700w 80 Plus Bronze",
+            "price": "1209000" 
+        },
+        {
+            "id": 11,
+            "name_pc": "Pc Office Intel Core I7 10700",
+            "GPU": "Intel UHD Graphics 630",    
+            "RAM": "8gb Ram",
+            "img":"https://www.megatecnologia.com.ar/thumb/1671133490847_800x800.jpg",
+            "storage": "SSD 480gb",
+            "power_supply": "750w 80 plus gold",
+            "price": "605300" 
+        }
+    ]
+}
