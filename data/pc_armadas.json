@@ -8,7 +8,7 @@
             "img":"https://www.megatecnologia.com.ar/thumb/1694632341434_800x800.jpg",
             "storage": "SSD 480gb",
             "power_supply": "750w 80 plus gold",
-            "price": "1910000" 
+            "price": "1.910.000" 
         },
         {
             "id": 2,
@@ -18,7 +18,7 @@
             "img":"https://www.megatecnologia.com.ar/thumb/1694620183919_800x800.jpg",
             "storage": "SSD 480gb",
             "power_supply": "500w Bronze",
-            "price": "900000" 
+            "price": "900.000" 
         },
         {
             "id": 3,
@@ -28,7 +28,7 @@
             "img":"https://www.megatecnologia.com.ar/thumb/1697042374014_800x800.jpg",
             "storage": "SSD 480gb",
             "power_supply": "Fuente 550w Bronze",
-            "price": "570000" 
+            "price": "570.000" 
         },
         {
             "id": 4,
@@ -38,7 +38,7 @@
             "img":"https://www.megatecnologia.com.ar/thumb/1688495344934_800x800.jpg",
             "storage": "SSD 480gb",
             "power_supply": "Fuente 750w 80 Plus Bronze",
-            "price": "770000" 
+            "price": "770.000" 
         },
         {
             "id": 5,
@@ -48,7 +48,7 @@
             "img":"https://www.megatecnologia.com.ar/thumb/1694632341434_800x800.jpg",
             "storage": "SSD 480gb",
             "power_supply": "Fuente 550w Bronze",
-            "price": "630000" 
+            "price": "630.000" 
         },
         {
             "id": 6,
@@ -58,7 +58,7 @@
             "img":"https://www.megatecnologia.com.ar/thumb/1667486198320_800x800.jpg",
             "storage": "SSD 480gb",
             "power_supply": "Gabinete En Kit + 500",
-            "price": "370000" 
+            "price": "370.000" 
         },
         {
             "id": 7,
@@ -68,7 +68,7 @@
             "img":"https://www.megatecnologia.com.ar/thumb/1694633978779_800x800.jpg",
             "storage": "1tb Nvme ",
             "power_supply": "Fuente 1000w 80 Plus Gold",
-            "price": "4269000" 
+            "price": "4.269.000" 
         },
         {
             "id": 8,
@@ -78,7 +78,7 @@
             "img":"https://www.megatecnologia.com.ar/thumb/1694632072641_800x800.jpg",
             "storage": "500gb Nvme",
             "power_supply": "uente 850w 80 Plus Gold",
-            "price": "1439000" 
+            "price": "1.439.000" 
         },
         {
             "id": 9,
@@ -88,7 +88,7 @@
             "img":"https://www.megatecnologia.com.ar/thumb/1682105591309_800x800.jpg",
             "storage": "SSD 480gb",
             "power_supply": "500w 80 plus bronze",
-            "price": "440000" 
+            "price": "440.000" 
         },
         {
             "id": 10,
@@ -98,7 +98,7 @@
             "img":"https://www.megatecnologia.com.ar/thumb/1694631005438_800x800.jpg",
             "storage": "SSD 480gb",
             "power_supply": "Fuente 700w 80 Plus Bronze",
-            "price": "1209000" 
+            "price": "1.209.000" 
         },
         {
             "id": 11,
@@ -108,7 +108,7 @@
             "img":"https://www.megatecnologia.com.ar/thumb/1671133490847_800x800.jpg",
             "storage": "SSD 480gb",
             "power_supply": "750w 80 plus gold",
-            "price": "605300" 
+            "price": "605.300" 
         }
     ]
 }

@@ -33,9 +33,9 @@
         </div>
     </header>
     <div id="app">
-        <div class="card" v-for="product in datos">
+        <div class="card" v-for="product in datosPaginados">
             <div class="card_img">
-                <img class="prod-img" :src="product.image" alt="producto.product_name">
+                <img class="prod-img" :src="product.image" v-bind:alt="product.product_name">
             </div>
             <div class="card_info">
                 <div class="card_titles">
@@ -45,6 +45,11 @@
                     <p class="card__price">${{ product.price }}</p>
                 <button class="card__btn" >Comprar</button>
             </div>
+        </div>
+        <div class="paginado">
+            <ul>
+                <li class="number" v-for="pagina in totalPaginas()" v-on:click="getDataPagina(pagina)"><a href="#">{{pagina}}</a></li>
+            </ul>
         </div>
     </div>
     <footer>
