@@ -300,7 +300,16 @@ nav ul li a:hover::after{
 /*                          Fin de Login                       */
 main{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;    
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+main img{
+    width: 20%;
+    height: 20%;
 }
 
 /*                             footer del sitio                              */
@@ -309,7 +318,7 @@ footer{
     width: 100%;
     height: 100%;
     background-color: #38B6FF;
-    margin-top:50px;
+
 }
 footer .footer-container{
     width: 100%;
