@@ -33,7 +33,7 @@
         {
         "product_name": "Ryzen 5 3600 4.2GHz Am4",
         "image": "https://http2.mlstatic.com/D_NQ_NP_847865-MLA50462139755_062022-O.webp",
-        "price": 158.389,
+        "price": 158389,
         "stock": false,
         "discount": 2000,
         "type_component": "processor",
