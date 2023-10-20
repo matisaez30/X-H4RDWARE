@@ -1,10 +1,55 @@
-const form = document.querySelector('#form');
-const nombre = document.querySelector('#nombre');
-const email = document.querySelector('#email');
-const mensaje = document.querySelector('#mensaje');
-const error = document.querySelector('#error');
-
 //formulario de contacto:
+function validar(){
+    const name = document.getElementById('nombre');
+    const lastName = document.getElementById('apellido');
+    const email = document.getElementById('email');
+    const phone = document.getElementById('telefono');
+    const msg = document.getElementById('mensaje');
+    console.log(name.value)
+    console.log(lastName.value)
+    console.log(email.value)
+    console.log(msg.value)
+    let error = false;
+
+    if(name.value == ''){
+        document.getElementById('validar_name').innerHTML = 'Por favor, ingrese su nombre';
+        error = true;
+        name.focus();
+    }
+    if(lastName.value == ''){
+        document.getElementById('validar_lastName').innerHTML = 'Por favor, ingrese su apellido';
+        error = true;
+        lastName.focus();
+    }
+    if(email.value == ''){
+        document.getElementById('validar_email').innerHTML = 'Por favor, ingrese su email';
+        error = true;
+        email.focus();
+    }
+    if(phone.value == ''){
+        document.getElementById('validar_phone').innerHTML = 'Por favor, ingrese su teléfono';
+        error = true;
+        phone.focus();
+    }
+    if(msg.value.length == 10){
+        document.getElementById('validar_msg').innerHTML = 'Por favor, ingrese su mensaje';
+        error = true;
+        msg.focus();
+    }
+    if(error == false){
+        document.getElementById('nombre').value = '';
+        document.getElementById('validar_name').innerHTML ='&nbsp;';
+        document.getElementById('email').value = '';
+        document.getElementById('validar_email').innerHTML ='&nbsp;';
+        document.getElementById('telefono').value = '';
+        document.getElementById('validar_phone').innerHTML ='&nbsp;';
+        document.getElementById('mensaje').value ='';
+        document.getElementById('validar_msg').innerHTML ='&nbsp;';
+        alert("Gracias, responderemos a la brevedad");
+        const form = document.getElementById('form');
+        form.addEventListener('submit', handleSubmit);
+    }
+}
 
 async function handleSubmit(event){
     event.preventDefault();
@@ -21,26 +66,3 @@ async function handleSubmit(event){
         alert('Su mensaje ha sido enviado con exito. Te responderemos a la brevedad, gracias!')
     }
 }
-
-form.addEventListener('submit', handleSubmit);
-
-// form.addEventListener('submit', (e) => {
-//     e.preventDefault();
-//     let mensajesError = [];
-//     if (nombre.value === null || nombre.value === '') {
-//         mensajesError.push('Ingresa tu nombre');
-//     }
-//     if (email.value === null || email.value === '') {
-//         mensajesError.push('Ingresa tu email');
-//     }
-//     if (mensaje.value === null || mensaje.value === '') {
-//         mensajesError.push('Ingresa tu mensaje');
-//     }
-//     error.innerHTML = mensajesError.join(', ');
-
-//     if (mensajesError.length === 0) {
-//         form.reset();
-//         error.innerHTML = 'Mensaje enviado correctamente';
-//     }
-
-// });

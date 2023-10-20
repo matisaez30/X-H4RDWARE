@@ -50,18 +50,22 @@
     </section>
     <section id="contacto">
         <h2>Resolvemos tus dudas:</h2>
-        <form action="https://formspree.io/f/xknlpzzb"
-        method="POST">
+        <form id="form" onsubmit="return validar();" action="https://formspree.io/f/xknlpzzb" method="POST">
             <div class="data">
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre" >
-                <input type="text" name="apellido" id="apellido" placeholder="Apellido" >
+                <input type="text" name="nombre" id="nombre" value="" placeholder="Nombre" >
+                <div id="validar_name" style="color:red">&nbsp;</div>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                <div id="validar_lastName" style="color:red">&nbsp;</div>
             </div>
             <div class="data">
-                <input type="email" name="email" id="email" placeholder="Email" >
-                <input type="text" name="telefono" id="telefono" placeholder="Teléfono">
+                <input type="email" name="email" id="email" value="" placeholder="Email" >
+                <div id="validar_email" style="color:red">&nbsp;</div>
+                <input type="number" name="telefono" id="telefono" value="" placeholder="Teléfono">
+                <div id="validar_phone" style="color:red">&nbsp;</div>
             </div>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje" ></textarea>
-                <button type="submit">Enviar</button>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"value="" ></textarea>
+                <div id="validar_msg" style="color:red">&nbsp;</div>
+                <input class="button-submit" type="submit" value="Enviar"/>
         </form>
     </section>
     <footer>
@@ -79,5 +83,6 @@
             </div>
         </div>
     </footer>
+    <script src="./nosotros.js"></script>
 </body>
 </html>
