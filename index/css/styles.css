@@ -531,6 +531,9 @@ footer .footer-container{
 }
 
 @media only screen and (max-width:320px){
+    header{
+        position: fixed;
+    }
     .encabezado{
         width: 100%;
         display: flex;
@@ -573,6 +576,7 @@ footer .footer-container{
         gap: 25px;
     }
     .nav-container.active ul .btn-close{
+        display: block  ;
         position: absolute;
         top: 0;
         right: 15%;
@@ -588,6 +592,19 @@ footer .footer-container{
         background-color: var(--color-navbar);
         outline: none;
         font-size: 1.5em;
+    }
+    .wrapper{
+        display: block;
+        position: fixed;
+        width: 95vw;
+        height: 70%;
+        left: 0;
+        z-index: 99;
+    }
+
+    .wrapper .form-box{
+        width: 100%;
+        padding: 0;
     }
     main{
         width: 100vw;
@@ -639,17 +656,16 @@ footer .footer-container{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 100vw;
         height: 100%;
     } 
     #productos h2{
         width: 100%;
-        height: 100%;
-        margin-left: 20%;
+        height: 20%;
     }
     #productos .productos-container .cards{
-        width: 50%;
-        height: 30%;
+        width: 100vw;
+        height: 80%;
         margin-bottom: 20px;
     }
     #productos .productos-container .cards img{
@@ -677,156 +693,11 @@ footer .footer-container{
 }
 
 @media only screen and (max-width:375px){
-    .encabezado{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    header .hamburguesa{
-        display: block;
-        font-size: 1.5em;
-        color: #38B6FF;
-        background-color: var(--color-navbar);
-        border: none;
-        outline: none;
-        margin-right: 20px;
-        cursor: pointer;
-    }
-    .nav-container{
-        display: none;
-    }
-    .nav-container.active{
-        display: flex;
+    header{
         position: fixed;
-        flex-direction: column;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: var(--color-navbar);
-        z-index: 99;
     }
-    .nav-container.active ul{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        width: 100%;
-        top: 0;
-        right: 10%;
-        gap: 25px;
-    }
-    .nav-container.active ul .btn-close{
-        position: absolute;
-        top: 0;
-        right: 15%;
-        background-color: var(--color-navbar);
-        border: none;
-        outline: none;
-        font-size: 1.5em;
-    }
-    .nav-container.active .btnLoguin-popup{
-        position: relative;
-        top: 20%;
-        right: 10%;
-        background-color: var(--color-navbar);
-        outline: none;
-        font-size: 1.5em;
-    }
-    main{
-        width: 100vw;
-        height: 100vh;
-        background-image: url('../assets/fondo-img/set-up.webp');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    main .inicio-container{
-        display: flex; 
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;    
-        height: 100%;
-
-       }
-    main .inicio-container-text h1{
-        width: 100%;
-        height: 100%;
-        position: relative;
-        top: 0;
-        right: 15%;
-    }
-    
-    main .fondo-container{
-        display: none;
-    }
-    #descuentos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-    }   
-    #descuentos img{
-        width: 100%;
-        height: 100%;
-    }
-    #descuentos .descuentos-container{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;    
-        width: 100%;
-        height: 100%;
-        margin-left: 5%;   
-    }  
-    #productos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-    } 
-    #productos h2{
-        width: 100%;
-        height: 100%;
-        margin-left: 20%;
-    }
-    #productos .productos-container .cards{
-        width: 50%;
-        height: 30%;
-        margin-bottom: 20px;
-    }
-    #productos .productos-container .cards img{
-        width: 100%;
-        height: 100%;
-    }
-    footer{
-        width: 100%;
-        height: 100%;
-    }
-    footer .footer-container{
-        width: 100%;
-        height: 100%;
-        display:flex;
-        align-items: center;
-        flex-direction: column;
-        box-shadow: 0px -12px 17px 6px rgba(0,0,0,0.28);
-    }
-    footer .footer-container .footer-container-title p{
-        width: 100%;
-        height: 100%;
-        margin-left: 10%;
-    }   
-
-}
-
-@media only screen and (max-width:425px){
     .encabezado{
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -867,6 +738,7 @@ footer .footer-container{
         gap: 25px;
     }
     .nav-container.active ul .btn-close{
+        display: block  ;
         position: absolute;
         top: 0;
         right: 15%;
@@ -882,6 +754,19 @@ footer .footer-container{
         background-color: var(--color-navbar);
         outline: none;
         font-size: 1.5em;
+    }
+    .wrapper{
+        display: block;
+        position: fixed;
+        width: 95vw;
+        height: 70%;
+        left: 0;
+        z-index: 99;
+    }
+
+    .wrapper .form-box{
+        width: 100%;
+        padding: 0;
     }
     main{
         width: 100vw;
@@ -933,17 +818,16 @@ footer .footer-container{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 100vw;
         height: 100%;
     } 
     #productos h2{
         width: 100%;
-        height: 100%;
-        margin-left: 20%;
+        height: 20%;
     }
     #productos .productos-container .cards{
-        width: 50%;
-        height: 30%;
+        width: 100vw;
+        height: 80%;
         margin-bottom: 20px;
     }
     #productos .productos-container .cards img{
@@ -966,5 +850,183 @@ footer .footer-container{
         width: 100%;
         height: 100%;
         margin-left: 10%;
-    }  
+    }   
+
+}
+
+@media only screen and (max-width:425px){
+    header{
+        position: fixed;
+    }
+    .encabezado{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header .hamburguesa{
+        display: block;
+        font-size: 1.5em;
+        color: #fff;
+        background-color: var(--color-navbar);
+        border: none;
+        outline: none;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .nav-container{
+        display: none;
+    }
+    .nav-container.active{
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--color-navbar);
+        z-index: 99;
+    }
+    .nav-container.active ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        right: 10%;
+        gap: 25px;
+    }
+    .nav-container.active ul .btn-close{
+        display: block  ;
+        position: absolute;
+        top: 0;
+        right: 15%;
+        background-color: var(--color-navbar);
+        border: none;
+        outline: none;
+        font-size: 1.5em;
+    }
+    .nav-container.active .btnLoguin-popup{
+        position: relative;
+        top: 20%;
+        right: 10%;
+        background-color: var(--color-navbar);
+        outline: none;
+        font-size: 1.5em;
+    }
+    .wrapper{
+        display: block;
+        position: fixed;
+        width: 95vw;
+        height: 70%;
+        left: 0;
+        z-index: 99;
+    }
+
+    .wrapper .form-box{
+        width: 100%;
+        padding: 0;
+    }
+    main{
+        width: 100vw;
+        height: 100vh;
+    }
+    main .inicio-container{
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;    
+        height: 100%;
+
+       }
+    main .inicio-container-text h1{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 0;
+        right: 15%;
+    }
+    
+    main .fondo-container{
+        display: none;
+    }
+    #descuentos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }   
+    #descuentos img{
+        width: 100%;
+        height: 100%;
+    }
+    #descuentos .descuentos-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+        width: 100%;
+        height: 100%;
+    } 
+    #descuentos h2{
+        width: 100%;
+        height: 20%;
+        margin-left: 15%;
+    }
+    #descuentos p{
+        margin-left: 0;
+        text-align: justify;
+        margin: 0 10px;
+
+    }
+    #productos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100%;
+        margin-bottom: 100vh;
+    } 
+    #productos h2{
+        width: 100%;
+        margin-left: 35%;
+    }
+    #productos .productos-container .cards{
+        width: 100%;
+        height: 80%;
+        margin-bottom: 20px;
+    }
+    #productos .productos-container .cards img{
+        width: 100%;
+        height: 100%;
+    }
+    footer{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    footer .footer-container{
+        width: 100%;
+        height: 100%;
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0px -12px 17px 6px rgba(0,0,0,0.28);
+    }
+    footer .footer-container .footer-container-title p{
+        width: 100%;
+        height: 100%;
+        margin-left: 10%;
+    }   
+
+    @media only screen and (max-width:768px){
+
+    }
 }
