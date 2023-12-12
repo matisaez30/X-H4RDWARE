@@ -6,7 +6,7 @@ createApp({
             datos: [],
             elementosPorPagina: 10,
             datosPaginados:[],
-            url: '../../data/data.json'
+            url: 'https://matisaez.pythonanywhere.com/productos'
         }
     },
     methods: {
@@ -14,7 +14,7 @@ createApp({
             fetch(url)
             .then(res => res.json()
             .then(data => {
-                this.datos = data.products;
+                this.datos = data;
                 this.datosPaginados = this.datos.slice(0, this.elementosPorPagina);
             })
             .catch(err => console.log(err))
