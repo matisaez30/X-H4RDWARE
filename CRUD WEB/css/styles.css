@@ -48,6 +48,7 @@ header nav{
     align-items: center;
     margin-right: 20px;
 }
+
 nav ul{
     display: flex;
 }
@@ -265,6 +266,7 @@ nav .btn-close{
     transition: .5s;
     text-decoration: underline;
 }
+
 
 .btn{
     width: 80%;

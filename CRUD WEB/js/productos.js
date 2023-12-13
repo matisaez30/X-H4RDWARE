@@ -3,11 +3,12 @@ const { createApp } = Vue
     data() {
       return {
         productos:[],
-        
-        url:'https://matisaez.pythonanywhere.com/productos', 
+        //url:'http://localhost:5000/productos', 
+   // si el backend esta corriendo local  usar localhost 5000(si no lo subieron a pythonanywhere)
+        url:'https://matisaez.pythonanywhere.com/productos',   // si ya lo subieron a pythonanywhere
         error:false,
         cargando:true,
-        
+        /*atributos para el guardar los valores del formulario */
         
         nombre:"", 
         precio:0,
@@ -35,10 +36,10 @@ const { createApp } = Vue
                 method: 'DELETE',
             }
             fetch(url, options)
-                .then(res => res.text()) 
+                .then(res => res.text()) // or res.json()
                 .then(res => {
 			 alert('Registro Eliminado')
-                    location.reload(); 
+                    location.reload(); // recarga el json luego de eliminado el registro
                 })
         },
         grabar(){
@@ -57,11 +58,11 @@ const { createApp } = Vue
             fetch(this.url, options)
                 .then(function () {
                     alert("Registro grabado")
-                    window.location.href = "./productos.html";  
+                    window.location.href = "./productos.html";  // recarga productos.html
                 })
                 .catch(err => {
                     console.error(err);
-                    alert("Error al Grabar")  
+                    alert("Error al Grabar")  // puedo mostrar el error tambien
                 })      
         }
     },
